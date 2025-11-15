@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock · Paper · Scissors</h1>
+
+    <div id="player-choice">Player Choice: -</div>
+    <div id="computer-choice">Computer Choice: -</div>
+    <div id="result">Click a button to play!</div>
+
+    <!-- Scoreboard -->
+    <div id="scoreboard">
+      <p><span>Player:</span> <span id="player-score">0</span></p>
+      <p><span>Computer:</span> <span id="computer-score">0</span></p>
+      <p><span>Ties:</span> <span id="tie-score">0</span></p>
+    </div>
+
+    <div class="buttons">
+      <!-- ✊ Rock -->
+      <button onclick="playGame('rock')" aria-label="Rock" title="Rock">
+        ✊
+      </button>
+      <!-- ✋ Paper -->
+      <button onclick="playGame('paper')" aria-label="Paper" title="Paper">
+        ✋
+      </button>
+      <!-- ✌ Scissors -->
+      <button
+        onclick="playGame('scissors')"
+        aria-label="Scissors"
+        title="Scissors"
+      >
+        ✌
+      </button>
+    </div>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
